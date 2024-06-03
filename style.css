@@ -1,0 +1,35 @@
+<body>
+<!--All content goes here-->
+<div 
+<div>
+    <nav>
+        <h1>Totally Chic</h1>
+        <ul><li><a>Home</a></li></ul>
+        <ul><li><a>Portfolio</a></li></ul>
+    </nav>
+
+    <main>
+        <!--Sidebar section-->
+        <div>
+        <img src="https://i.pinimg.com/originals/9c/ac/c3/9cacc34bb98f18fb1dd4874e6a272180.jpg">
+        </div>
+<h2>Saja Hassan</h2>
+<p>Senior at Lycee Francais de la Nouvelle Orleans</p>
+    <!--Interests section-->
+    <div>
+        <h3>Interests</h3>
+        <ul>
+            <li>Fashion & Beauty</li>
+            <li>Reading</li>
+            <li>Learning</li>
+        </ul>
+    </div>
+        </div>
+        <!--Content section-->
+        <div>
+
+        </div>
+    </main>
+</div>
+    </body>
+</html>
