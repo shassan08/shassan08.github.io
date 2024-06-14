@@ -52,7 +52,7 @@ createPlatform(100,100,150,30)
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
-
+createPlatform(500, 300, 200, 20);//tall but thin platoform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
 
 
 
