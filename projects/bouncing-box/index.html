@@ -62,8 +62,8 @@
 
         // TODO 2 - Variable declarations
         var positionX = 0;
-		var points = 0;
-		var speed = 10;
+        var points = 0;
+        var speed = 10;
 
         /* 
 			This Function will be called 20 times/second. Each time it is called,
@@ -74,20 +74,18 @@
           /* Your Code to Increase positionX by 10 HERE */
           positionX = positionX + speed;
           moveBoxTo(positionX);
-		   // Check if the box has collided with the right wall
-		   if (positionX > boardWidth) {
-        // Change the direction of the box
-        speed = -speed;  // You can also use speed *= -1; or speed = speed * -1;
-    }
-    
-    // Check if the box has collided with the left wall
-    if (positionX < 0) {
-        // Change the direction of the box
-        speed = -speed;  // You can also use speed *= -1; or speed = speed * -1;
-    }
-}
-if(positionX < 0){
-}
+          // Check if the box has collided with the right wall
+          if (positionX > boardWidth) {
+            // Change the direction of the box
+            speed = -speed; // You can also use speed *= -1; or speed = speed * -1;
+          }
+
+          // Check if the box has collided with the left wall
+          if (positionX < 0) {
+            // Change the direction of the box
+            speed *= -1; // You can also use speed *= -1; or speed = speed * -1;
+          }
+        }
 
         /* 
 			This Function will be called each time the box is clicked. Each time it is called,
@@ -95,13 +93,17 @@ if(positionX < 0){
 			the left side of the screen.
 			*/
         function handleBoxClick() {
-			positionX = 0;
-			// your code to increase the points variable by 1
-			points = points + 1;
-			changeBoxText(points);
-			speed = speed + 3;
-		}
-		
+          if (speed > 0) {
+            speed = speed + 3;
+          } else if (speed < 0) {
+            speed = speed - 3;
+          }
+
+          positionX = 0;
+          // your code to increase the points variable by 1
+          points = points + 1;
+          changeBoxText(points);
+        }
       })();
     </script>
   </body>
